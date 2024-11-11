@@ -33,10 +33,10 @@ To use this code you need following requirements :
 ## Screenshots of the website
 
 <ul>
-<li><b>Home Page: </b><img src="./output/home-page.jpg" alt="homepage"></li>
-<li><b>Room Creating Page: </b><img src="./output/room-id-creating-page.jpg" alt="room-creatingPage"></li>
-<li><b>Room verifier Page: </b><img src="./output/room-verifey-page.png" alt="roomVerifier"></li>
-<li><b>Chat Page: </b> <img src="./output/chat-page.jpg" alt="Chat page"></li>
+<li><b>Home Page: </b><br/><img src="./output/home-page.jpg" alt="homepage"></li>
+<li><b>Room Creating Page: </b><br/><img src="./output/room-id-creating-page.jpg" alt="room-creatingPage"></li>
+<li><b>Room verifier Page: </b><br/><img src="./output/room-verifey-page.png" alt="roomVerifier"></li>
+<li><b>Chat Page: </b><br/><img src="./output/chat-page.jpg" alt="Chat page"></li>
 </ul>
 
 > [!Note]
