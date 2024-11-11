@@ -1,0 +1,100 @@
+#signin-link {
+    margin-left: auto;
+    gap:24px;
+    display: inline-flex;
+}
+
+#signin-button, #signout-button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: block;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#signin-button:hover, #signout-button:hover {
+    background-color: #45a049;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#signout-button {
+    display: none;
+}
+
+#signin-button {
+    display: block;
+}
+
+#profile-pic {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    border: 2px solid green; 
+    margin-left: 10px; 
+    vertical-align: middle;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header h2 {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #signin-button, #signout-button {
+        margin-top: 10px;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    header h2 {
+        font-size: 1.5em;
+    }
+
+    #signin-button, #signout-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+        width: 100%; 
+    }
+}

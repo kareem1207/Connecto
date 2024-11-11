@@ -1,0 +1,22 @@
+#room-id {
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode #room-id {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
+}
+
+body.light-mode #room-id {
+    background-color: #f9f9f9;
+    color: #000000;
+    border: 1px solid #cccccc;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecto</title>
+    <link rel="icon" type="image/x-icon" href="/images/Connecto logo.png">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/mode.css">
+    <link rel="stylesheet" href="./css/sign.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/pre.css">
+    <script src="./js/disbaleRightClick.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img id="title" alt="Connecto" height="200px">
+            </a>
+        </div>
+        <center>
+            <div id="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="chat.html" class="active">Chat</a></li>
+                </ul>
+                <div id="signin-link">
+                    <button id="signin-button">Sign In</button>
+                    <img id="profile-pic" alt="Profile Picture">
+                    <button id="signout-button" style="display: none;">Sign Out</button>
+                </div>
+                <!-- Centered Theme toggle button in the hamburger menu -->
+                <div id="theme-toggle" onclick="toggleTheme()">🌙</div>
+            </nav>
+        </center>
+    </header>
+    <center>
+        <div class="content-box">
+            <h1>Click any one of the buttons below</h1>
+            <pre>
+Click on "Create a room" to create a room, it will provide an 8-character ID of both numbers and letters that you can share with friends to join the chat room.
+Click on "Join a room" to join a room; it will ask you to enter the room ID that you have shared with friends.
+            </pre>
+        </div>
+    </center>
+
+    <center>
+        <a href="roomCreatingPage.html">
+            <button>Create a room</button>
+        </a>
+        <a href="roomVerifer.html">
+            <button>Join a room</button>
+        </a>
+    </center>
+
+    <!-- Firebase configuration and script -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script type="module" src="./app/authentication.mjs"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/theme.js"></script>
+</body>
+
+</html>

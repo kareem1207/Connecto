@@ -1,0 +1,189 @@
+#verifier {
+    padding: 20px;
+    background-color: #1f1f1f;
+    max-width: 400px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#id-verifier-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+#error-message {
+    color: #e57373;
+    font-size: 14px;
+    margin-top: 10px;
+}
+ body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#theme-toggle {
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+header {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.light-mode header {
+    background-color: #f1f1f1;
+    color: #000000;
+}
+
+#room-id {
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode #room-id {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
+}
+
+body.light-mode #room-id {
+    background-color: #f9f9f9;
+    color: #000000;
+    border: 1px solid #cccccc;
+}
+
+body.light-mode #nav-menu a {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    #nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: inherit;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s, color 0.3s;
+        width: 200px;
+        text-align: center;
+    }
+
+    body.dark-mode #nav-menu {
+        background-color: #1e1e1e;
+        color: #ffffff;
+        border: 1px solid #333333;
+    }
+
+    body.light-mode #nav-menu {
+        background-color: #f9f9f9;
+        color: #000000;
+        border: 1px solid #cccccc;
+    }
+
+    #nav-menu ul {
+        list-style-type: none;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #nav-menu ul li {
+        padding: 10px 0;
+    }
+
+    #nav-menu ul li a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    #nav-menu #theme-toggle {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+body.dark-mode #verifier {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body.light-mode #verifier {
+    background-color: #f9f9f9;
+    color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode #verifier label {
+    color: #ffffff;
+}
+
+body.dark-mode #id-verifier-input {
+    color: #ffffff;
+    background-color: #333333;
+    border: 1px solid #555555;
+}
+
+body.light-mode #verifier label {
+    color: #000000;
+}
+
+body.light-mode #id-verifier-input {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+body.light-mode #id-verifier-input::placeholder {
+    color: #9e9e9e;
+}
+
+body.dark-mode #id-verifier-input::placeholder {
+    color: #aaaaaa;
+}

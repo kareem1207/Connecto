@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecto</title>
+    <link rel="icon" type="image/x-icon" href="/images/Connecto logo.png">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="./js/disbaleRightClick.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/roomVerifier.css">
+    <link rel="stylesheet" href="./css/sign.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img id="title" alt="Connecto" height="200px">
+            </a>
+        </div>
+        <center>
+            <div id="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="chat.html" class="active">Chat</a></li>
+                </ul>
+                <div id="signin-link">
+                    <button id="signin-button">Sign In</button>
+                    <img id="profile-pic" alt="Profile Picture">
+                    <button id="signout-button" style="display: none;">Sign Out</button>
+                </div>
+                <!-- Theme toggle icon placed next to Sign In button -->
+                <div id="theme-toggle" onclick="toggleTheme()">🌙</div>
+            </nav>
+        </center>
+    </header>
+    <div id="verifier">
+        <label for="id-verifier">Enter Room ID </label>
+        <input type="text" name="id-verifier" id="id-verifier-input" placeholder="Enter Room ID">
+        <center>
+            <button id="verify-button">Verify</button>
+            <p id="error-message"></p>
+        </center>
+    </div>
+    <script type="module" src="./app/authentication.mjs"></script>
+    <script src="./app/verifer.mjs" type="module"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/theme.js"></script>
+
+</body>
+
+</html>

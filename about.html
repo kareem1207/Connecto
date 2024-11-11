@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecto</title>
+    <link rel="icon" type="image/x-icon" href="/images/Connecto logo.png">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/pre.css">
+    <link rel="stylesheet" href="./css/sign.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/mode.css">
+    <script src="./js/disbaleRightClick.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img id="title" alt="Connecto" height="200px">
+            </a>
+        </div>
+        <center>
+            <div id="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="chat.html">Chat</a></li>
+                </ul>
+                <div id="signin-link">
+                    <button id="signin-button">Sign In</button>
+                    <img id="profile-pic" alt="Profile Picture">
+                    <button id="signout-button" style="display: none;">Sign Out</button>
+                </div>
+                <div id="theme-toggle" onclick="toggleTheme()">🌙</div>
+            </nav>
+        </center>
+    </header>
+    <center>
+        <div class="content-box">
+            <h1>Welcome to the About Page</h1>
+            <pre>
+            This is the about page. Here, you can find out more about ConnecTo.
+ConnecTo is a web application developed by a team of developers to facilitate virtual discussions. It is designed to be user-friendly, easy to use, and has a focus on privacy and security.
+The application uses Firebase for real-time database and messaging, allowing users to join rooms and send messages in real-time.
+we can add notification but by adding it we are just removing the main privacy feature of our website no one can see your messages unless they know the room id in which you guys are chatting. 
+
+Hope you enjoy the app.
+Thanks for visiting our website
+    </pre>
+        </div>
+    </center>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script type="module" src="./app/authentication.mjs"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/theme.js"></script>
+</body>
+
+</html>

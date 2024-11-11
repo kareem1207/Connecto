@@ -1,0 +1,143 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#theme-toggle {
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+header {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.light-mode header {
+    background-color: #f1f1f1;
+    color: #000000;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+body.dark-mode nav ul li a,
+body.dark-mode #signin-button {
+    color: #ffffff;
+}
+
+body.light-mode nav ul li a,
+body.light-mode #signin-button {
+    color: #000000;
+}
+
+#hamburger-menu {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    #nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: inherit;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s, color 0.3s;
+        width: 200px;
+        text-align: center;
+    }
+
+    body.dark-mode #nav-menu {
+        background-color: #1e1e1e;
+        color: #ffffff;
+        border: 1px solid #333333;
+    }
+
+    body.light-mode #nav-menu {
+        background-color: #f9f9f9;
+        color: #000000;
+        border: 1px solid #cccccc;
+    }
+
+    #nav-menu ul {
+        list-style-type: none;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #nav-menu ul li {
+        padding: 10px 0;
+    }
+
+    #nav-menu ul li a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    #nav-menu #theme-toggle {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+.content-box {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .content-box {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #333333;
+}
+
+body.light-mode .content-box {
+    background-color: #f9f9f9;
+    color: #000000;
+    border: 1px solid #cccccc;
+}
+
+body.dark-mode .content-box pre {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+body.light-mode .content-box pre {
+    background-color: #eeeeee;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecto</title>
+    <link rel="icon" type="image/x-icon" href="/images/Connecto logo.png">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="./js/disbaleRightClick.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sign.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/mode.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img id="title" alt="Connecto" height="200px">
+            </a>
+        </div>
+        <center>
+            <div id="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="chat.html">Chat</a></li>
+                </ul>
+                <div id="signin-link">
+                    <button id="signin-button">Sign In</button>
+                    <img id="profile-pic" divlt="Profile Picture">
+                    <button id="signout-button" style="display: none;">Sign Out</button>
+                </div>
+                <!-- Theme toggle icon placed next to Sign In button -->
+                <div id="theme-toggle" onclick="toggleTheme()">🌙</div>
+            </nav>
+        </center>
+    </header>
+
+    <center>
+        <h1>Welcome to Connecto</h1>
+        <img alt="home info" id="homeInfo">
+        <p>A place where you can talk in privacy</p>
+        <a href="roomCreatingPage.html">
+            <button>Create a room</button>
+        </a>
+        <a href="roomVerifer.html">
+            <button>Join a room</button>
+        </a>
+    </center>
+
+    <script type="module" src="./app/authentication.mjs"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/theme.js"></script>
+</body>
+
+</html>
